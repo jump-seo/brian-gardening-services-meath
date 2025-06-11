@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian's Gardening Services & Property Maintenance | Professional Garden & Property Care in Co. Meath</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Professional gardening and property maintenance services in Co. Meath, Ireland. Specializing in grass cutting, hedge trimming, powerwashing, gutter cleaning and window cleaning.">
+    <meta name="keywords" content="gardening services, property maintenance, grass cutting, hedge trimming, powerwashing, gutter cleaning, window cleaning, Meath, Ireland">
+    <meta name="author" content="Brian's Gardening Services">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gardeningandmaintenance.ie/">
+    <meta property="og:title" content="Brian's Gardening Services & Property Maintenance | Professional Garden & Property Care">
+    <meta property="og:description" content="Professional gardening and property maintenance services in Co. Meath, Ireland. Specializing in grass cutting, hedge trimming, powerwashing, gutter cleaning and window cleaning.">
+    <meta property="og:image" content="favicon.ico">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gardeningandmaintenance.ie/">
+    <meta property="twitter:title" content="Brian's Gardening Services & Property Maintenance | Professional Garden & Property Care">
+    <meta property="twitter:description" content="Professional gardening and property maintenance services in Co. Meath, Ireland. Specializing in grass cutting, hedge trimming, powerwashing, gutter cleaning and window cleaning.">
+    <meta property="twitter:image" content="favicon.ico">  
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    
+    <!-- Fix for viewport height on mobile browsers -->
+    <script>
+        // Calculate viewport height once when the page loads
+        let vh = window.innerHeight * 0.01;
+        // Set the value in the --vh custom property to the root of the document
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        
+        // No resize event listener - fixed height based on initial page load
+    </script>
+    
+    <style>
+        /* Use the custom --vh variable instead of vh units */
+        .hero {
+            height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+            height: calc(var(--vh, 1vh) * 100);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero.jpg') no-repeat center center/cover;
+            background-attachment: fixed; /* Add parallax effect */
+        }
+        
+        /* Add this for any other elements that use vh units */
+        .thank-you-container {
+            height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+            height: calc(var(--vh, 1vh) * 100);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Brian's Gardening Services & Property Maintenance</h1>
+            </div>
+            <div class="mobile-toggle">
+                <button id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-overlay"></div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Professional Gardening & Property Maintenance in Co. Meath</h2>
+                <p>Keeping your outdoor spaces pristine and well-maintained year-round</p>
+                <a href="#contact" class="cta-button">Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-heading">
+                <h2>About Brian's Gardening Services</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At Brian's Gardening Services & Property Maintenance, we provide professional and reliable garden and property care services throughout Co. Meath. Our team delivers exceptional results with a focus on quality and customer satisfaction.</p>
+                    <p>Based in Drumbaragh, Co. Meath, we offer a comprehensive range of services including grass cutting, hedge trimming, powerwashing, gutter cleaning, and window cleaning. Whether you need regular garden maintenance or a one-time property cleanup, we're committed to exceeding your expectations.</p>
+                </div>
+                <div class="values">
+                    <div class="value-item">
+                        <h3>Reliable Service</h3>
+                        <p>Dependable and consistent care for your outdoor spaces</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Quality Work</h3>
+                        <p>Attention to detail and professional results every time</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Customer Satisfaction</h3>
+                        <p>Your complete satisfaction is our top priority</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-heading light">
+                <h2>Our Services</h2>
+                <div class="separator light"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>Grass & Hedge Cutting</h3>
+                    <p>Regular lawn mowing, grass trimming, and hedgerow maintenance to keep outdoor spaces neat and tidy</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-water"></i></div>
+                    <h3>Powerwashing</h3>
+                    <p>Thorough pressure cleaning to remove dirt, moss, and stains from hard surfaces like driveways, patios, walls, and more</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-house"></i></div>
+                    <h3>Gutter & Window Cleaning</h3>
+                    <p>Clearing gutters/fascias to prevent blockages and water damage, along with cleaning exterior windows for a crisp finish</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-heading">
+                <h2>What Our Clients Say</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="quote">"Brian and his team did an excellent job with our garden maintenance. Professional, efficient, and very thorough. They arrived on time and left everything spotless. Highly recommend their services!"</div>
+                    <div class="client">
+                        <div class="client-info">
+                            <h4>John D.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"Very pleased with the powerwashing service. Our driveway and patio look brand new again! Brian was professional and provided great value for money. Will definitely use their services again."</div>
+                    <div class="client">
+                        <div class="client-info">
+                            <h4>Mary S.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"Brian's Gardening Services has been maintaining our property for months now, and we couldn't be happier with the quality of work. Reliable, punctual, and great attention to detail. Five stars!"</div>
+                    <div class="client">
+                        <div class="client-info">
+                            <h4>Michael O.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Get Your Free Quote</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>R163 Drumbaragh, Co. Meath, Ireland</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+353 87 371 0975</p>
+                    </div>
+                    <div class="hours">
+                        <h4>Working Hours</h4>
+                        <p>Monday - Saturday: 8:00 AM - 6:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Request a Free Quote</h3>
+                    <form action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+                        <input type="hidden" name="_subject" value="New Quote Request from Brian's Gardening Services Website">
+                        <input type="hidden" name="_next" value="https://gardeningandmaintenance.ie/thanks.html">
+                        <!-- Honeypot field to prevent spam -->
+                        <input type="text" name="_honey" style="display:none">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="grass-hedge-cutting">Grass & Hedge Cutting</option>
+                                <option value="powerwashing">Powerwashing</option>
+                                <option value="gutter-window-cleaning">Gutter & Window Cleaning</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tell us about your requirements" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Brian's Gardening Services & Property Maintenance</h2>
+                    <p>Professional garden & property maintenance in Co. Meath</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li>Grass & Hedge Cutting</li>
+                        <li>Powerwashing</li>
+                        <li>Gutter & Fascia Cleaning</li>
+                        <li>Window Cleaning</li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/Forallyourgardenpropertyneeds/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year"></span> Brian's Gardening Services & Property Maintenance. All Rights Reserved.</p>
+                <div class="attribution">
+                    <p>Website designed by <a href="https://jumpseo.ie" target="_blank" class="jumpseo-link">JumpSEO</a></p>
+                    <a href="https://www.instagram.com/jump.seo" target="_blank" class="attribution-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to update current year in the footer -->
+    <script>
+        // Set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navbar = document.getElementById('navbar');
+            const menuOverlay = document.querySelector('.menu-overlay');
+            
+            if (menuToggle && navbar) {
+                menuToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    navbar.classList.toggle('active');
+                    
+                    // Toggle overlay
+                    if (menuOverlay) {
+                        if (navbar.classList.contains('active')) {
+                            menuOverlay.style.opacity = '1';
+                            menuOverlay.style.visibility = 'visible';
+                        } else {
+                            menuOverlay.style.opacity = '0';
+                            menuOverlay.style.visibility = 'hidden';
+                        }
+                    }
+                });
+                
+                // Close menu when clicking on a nav link or overlay
+                const navLinks = navbar.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navbar.classList.remove('active');
+                        
+                        if (menuOverlay) {
+                            menuOverlay.style.opacity = '0';
+                            menuOverlay.style.visibility = 'hidden';
+                        }
+                    });
+                });
+                
+                // Close menu when clicking on overlay
+                if (menuOverlay) {
+                    menuOverlay.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navbar.classList.remove('active');
+                        this.style.opacity = '0';
+                        this.style.visibility = 'hidden';
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html> 
