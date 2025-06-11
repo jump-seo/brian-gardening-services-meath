@@ -400,6 +400,7 @@ nav ul li a.cta-button::after {
     padding: 100px 0;
     background-color: var(--grey-color);
     color: var(--text-color);
+    position: relative;
 }
 
 .testimonials-slider {
@@ -410,6 +411,18 @@ nav ul li a.cta-button::after {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    position: relative;
+    padding-bottom: 30px; /* Add space for indicators */
+}
+
+/* Hide scrollbar */
+.testimonials-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonials-slider {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .testimonial {
@@ -420,6 +433,7 @@ nav ul li a.cta-button::after {
     border-radius: 10px;
     margin-right: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
 }
 
 .testimonial:last-child {
@@ -456,8 +470,109 @@ nav ul li a.cta-button::after {
 
 .client-info p {
     font-size: 0.9rem;
-    color: var(--secondary-color);
+    color: var(--dark-color);
     margin-bottom: 0;
+}
+
+/* Swipe indicators */
+.swipe-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.swipe-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.swipe-indicator.active {
+    background-color: var(--primary-color);
+    width: 25px;
+    border-radius: 10px;
+}
+
+/* Show partially the next testimonial on mobile */
+@media (max-width: 768px) {
+    .testimonials-slider {
+        padding: 0;
+    }
+    
+    .testimonial {
+        flex: 0 0 100%;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+    
+    .value-item {
+        flex-basis: 100%;
+    }
+    
+    /* Hide the value items in the about section on mobile */
+    .values {
+        display: none;
+    }
+    
+    /* Hide the second paragraph in about section on mobile */
+    .about-text p:nth-child(2) {
+        display: none;
+    }
+    
+    /* Make contact info smaller on mobile */
+    .contact-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .info-item i {
+        font-size: 1.2rem;
+    }
+    
+    .info-item p {
+        font-size: 0.9rem;
+    }
+    
+    .hours h4 {
+        font-size: 1rem;
+    }
+    
+    .hours p {
+        font-size: 0.9rem;
+    }
+    
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
 }
 
 /* Contact Section */

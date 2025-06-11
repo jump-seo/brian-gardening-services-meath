@@ -183,6 +183,13 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Swipe Indicators -->
+            <div class="swipe-indicators">
+                <div class="swipe-indicator active"></div>
+                <div class="swipe-indicator"></div>
+                <div class="swipe-indicator"></div>
+            </div>
         </div>
     </section>
 
@@ -336,6 +343,39 @@
                         this.style.visibility = 'hidden';
                     });
                 }
+            }
+            
+            // Testimonials slider indicators
+            const testimonialsSlider = document.querySelector('.testimonials-slider');
+            const indicators = document.querySelectorAll('.swipe-indicator');
+            
+            if (testimonialsSlider && indicators.length > 0) {
+                // Update indicators on scroll
+                testimonialsSlider.addEventListener('scroll', function() {
+                    const scrollPosition = testimonialsSlider.scrollLeft;
+                    const testimonialWidth = testimonialsSlider.querySelector('.testimonial').offsetWidth;
+                    const activeIndex = Math.round(scrollPosition / testimonialWidth);
+                    
+                    // Update active indicator
+                    indicators.forEach((indicator, index) => {
+                        if (index === activeIndex) {
+                            indicator.classList.add('active');
+                        } else {
+                            indicator.classList.remove('active');
+                        }
+                    });
+                });
+                
+                // Allow clicking on indicators to scroll
+                indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', function() {
+                        const testimonialWidth = testimonialsSlider.querySelector('.testimonial').offsetWidth;
+                        testimonialsSlider.scrollTo({
+                            left: index * testimonialWidth,
+                            behavior: 'smooth'
+                        });
+                    });
+                });
             }
         });
     </script>
