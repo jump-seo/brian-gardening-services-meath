@@ -498,6 +498,13 @@ nav ul li a.cta-button::after {
 
 /* Show partially the next testimonial on mobile */
 @media (max-width: 768px) {
+    /* Fix for zoomed parallax image on mobile */
+    .hero {
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+    }
+    
     .testimonials-slider {
         padding: 0;
     }
